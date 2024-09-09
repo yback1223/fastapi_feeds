@@ -1,0 +1,60 @@
+2024-09-08 17:10:50,040 - career_planner_feed - WARNING - No feeds found for user_id 1
+2024-09-08 17:11:01,169 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type Hashtag is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'hashtags': [Hashtag(value='string', background_color='string', text_color='string')], 'user_id': 0, 'date': DateInfo(value='string', background_color='string', text_color='string'), 'title': 'string', 'image_url': 'test/image.png', 'content': 'string'}]]
+2024-09-08 17:14:28,283 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type Hashtag is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'hashtags': [Hashtag(value='string', background_color='string', text_color='string')], 'user_id': 0, 'date': DateInfo(value='string', background_color='string', text_color='string'), 'content': 'string', 'image_url': 'test/image.png', 'title': 'string'}]]
+2024-09-08 17:14:48,618 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type Hashtag is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'user_id': 0, 'hashtags': [Hashtag(value='string', background_color='string', text_color='string')], 'date': DateInfo(value='string', background_color='string', text_color='string'), 'image_url': 'test/image.png', 'title': 'string', 'content': 'string'}]]
+2024-09-08 17:14:48,672 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type Hashtag is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'user_id': 0, 'hashtags': [Hashtag(value='string', background_color='string', text_color='string')], 'date': DateInfo(value='string', background_color='string', text_color='string'), 'image_url': 'test/image.png', 'title': 'string', 'content': 'string'}]]
+2024-09-08 17:15:42,048 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type Hashtag is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'user_id': 0, 'title': 'string', 'content': 'string', 'hashtags': [Hashtag(value='string', background_color='string', text_color='string')], 'date': DateInfo(value='string', background_color='string', text_color='string'), 'image_url': 'test/image.png'}]]
+2024-09-08 17:18:03,637 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'list' object has no attribute 'dict'
+2024-09-08 17:18:22,996 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'list' object has no attribute 'list'
+2024-09-08 17:19:25,990 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'list' object has no attribute 'dict'
+2024-09-08 17:19:34,981 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type Hashtag is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'user_id': 0, 'content': 'string', 'image_url': 'test/image.png', 'title': 'string', 'hashtags': [Hashtag(value='string', background_color='string', text_color='string')], 'date': DateInfo(value='string', background_color='string', text_color='string')}]]
+2024-09-08 17:23:07,625 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type Hashtag is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'title': 'string', 'image_url': 'test/image.png', 'content': 'string', 'date': DateInfo(value='string', background_color='string', text_color='string'), 'user_id': 0, 'hashtags': [Hashtag(value='string', background_color='string', text_color='string')]}]]
+2024-09-08 17:24:49,255 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type DateInfo is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'user_id': 0, 'date': DateInfo(value='string', background_color='string', text_color='string'), 'image_url': 'test/image.png', 'hashtags': '[{"value": "string", "background_color": "string", "text_color": "string"}]', 'title': 'string', 'content': 'string'}]]
+2024-09-08 17:24:56,191 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type DateInfo is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'image_url': 'test/image.png', 'title': 'string', 'content': 'string', 'date': DateInfo(value='string', background_color='string', text_color='string'), 'user_id': 0, 'hashtags': '[{"value": "string", "background_color": "string", "text_color": "string"}]'}]]
+2024-09-08 17:29:54,982 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (builtins.TypeError) Object of type DateInfo is not JSON serializable
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: [{'title': 'string', 'date': DateInfo(value='string', background_color='string', text_color='string'), 'image_url': 'test/image.png', 'content': 'string', 'hashtags': [Hashtag(value='string', background_color='string', text_color='string')], 'user_id': 0}]]
+2024-09-08 17:33:22,575 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: Python type list cannot be converted
+2024-09-08 17:36:19,863 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: Python type list cannot be converted
+2024-09-08 17:36:37,659 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (mysql.connector.errors.DataError) 3140 (22032): Invalid JSON text: "Missing a name for object member." at position 2 in value for column 'feeds.hashtags'.
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: {'title': 'string', 'content': 'string', 'hashtags': "[{'value': 'string', 'background_color': 'string', 'text_color': 'string'}]", 'date': "{'value': 'string', 'background_color': 'string', 'text_color': 'string'}", 'image_url': 'test/image.png', 'user_id': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-09-08 17:39:01,639 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'dict' object has no attribute 'dict'
+2024-09-08 17:39:13,139 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'dict' object has no attribute 'dict'
+2024-09-08 17:45:44,078 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (mysql.connector.errors.IntegrityError) 1048 (23000): Column 'hashtags' cannot be null
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: {'title': 'string', 'content': 'string', 'hashtags': None, 'date': None, 'image_url': 'test/image.png', 'user_id': 0}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-09-08 17:46:35,235 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: Python type list cannot be converted
+2024-09-08 17:47:31,752 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: Python type dict cannot be converted
+2024-09-08 17:52:25,637 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'dict' object has no attribute 'dict'
+2024-09-08 17:52:44,081 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'dict' object has no attribute 'dict'
+2024-09-08 17:55:54,754 - career_planner_feed - WARNING - [{'value': 'string', 'background_color': 'string', 'text_color': 'string'}]
+2024-09-08 17:55:54,754 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'dict' object has no attribute 'dict'
+2024-09-08 17:57:02,220 - career_planner_feed - WARNING - [{'value': 'string', 'background_color': 'string', 'text_color': 'string'}]
+2024-09-08 17:57:02,220 - career_planner_feed - CRITICAL - Unexpected error during feed creation for user_id 0: 'dict' object has no attribute 'dict'
+2024-09-08 17:57:14,515 - career_planner_feed - WARNING - [{'value': 'string', 'background_color': 'string', 'text_color': 'string'}]
+2024-09-08 17:58:37,285 - career_planner_feed - WARNING - [<app.models.Feed object at 0x110e3be50>, <app.models.Feed object at 0x110e48cd0>, <app.models.Feed object at 0x110e48d50>, <app.models.Feed object at 0x110e48dd0>, <app.models.Feed object at 0x110e48e90>, <app.models.Feed object at 0x110e48fd0>, <app.models.Feed object at 0x110e490d0>, <app.models.Feed object at 0x110e491d0>]
+2024-09-08 18:07:49,955 - career_planner_feed - ERROR - Database error during feed creation for user_id 0: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'career_planner_db.feeds' doesn't exist
+[SQL: INSERT INTO feeds (title, content, hashtags, date, image_url, user_id) VALUES (%(title)s, %(content)s, %(hashtags)s, %(date)s, %(image_url)s, %(user_id)s)]
+[parameters: {'title': '123', 'content': '321', 'hashtags': '[{}]', 'date': '{}', 'image_url': 'test/image.png', 'user_id': 0}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
