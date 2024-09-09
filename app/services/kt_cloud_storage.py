@@ -12,7 +12,7 @@ class KTCloudStorage(StorageInterface):
 		self.KT_SECRET_KEY = os.getenv('KT_SECRET_KEY')
 		self.KT_BUCKET = os.getenv('KT_BUCKET')
 
-	async def upload_image_from_storage(self, file_bytes: bytes, file_path: str) -> str:
+	async def upload_file_from_storage(self, file_bytes: bytes, file_path: str) -> str:
 		# KT Cloud Object Storage API 사용 예시
 		try:
 			response = requests.put(
@@ -31,7 +31,7 @@ class KTCloudStorage(StorageInterface):
 			logger.error(f"Error occurred during KT Cloud upload: {e}")
 			raise
 
-	async def delete_image_from_storage(self, file_path: str) -> bool:
+	async def delete_file_from_storage(self, file_path: str) -> bool:
 		try:
 			response = requests.delete(
 				f"https://api.ktcloud.com/storage/v1/{self.KT_BUCKET}/{file_path}",

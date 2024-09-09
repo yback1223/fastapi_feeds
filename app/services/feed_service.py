@@ -9,6 +9,7 @@ IMAGE_AI = False
 VIDEO_AI = False
 
 async def create_feed_service(db: Session, feed_data: FeedCreate, storage: StorageInterface):
+	image_service = ImageService(storage)
 	if IMAGE_AI:
 		image_url = create_image_service(feed_data, storage)
 	else:

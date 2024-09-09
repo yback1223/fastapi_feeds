@@ -71,8 +71,8 @@ class VideoService:
 
 	async def save_video(self, user_id: int, title: str, image_bytes: str):
 		file_path = f'videos/{user_id}/{title}.png'
-		image_url = await self.storage.upload_image_from_storage(image_bytes, file_path)
+		image_url = await self.storage.upload_file_from_storage(image_bytes, file_path)
 		return image_url
 	
 	async def delete_video(self, file_path: str) -> bool:
-		return await self.storage.delete_image_from_storage(file_path)
+		return await self.storage.delete_file_from_storage(file_path)

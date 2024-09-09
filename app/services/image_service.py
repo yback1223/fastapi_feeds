@@ -1,12 +1,11 @@
 import requests
-import boto3
 import os
-import time
 from typing import Any
-from botocore.exceptions import NoCredentialsError, ClientError
 from .storage_interface import StorageInterface
 from dotenv import load_dotenv
 from ..config import FeedLogger
+from celery import shared_task
+
 
 load_dotenv()
 
@@ -20,17 +19,19 @@ class ImageService:
 				"accept": "image/*"
 			},
 
+	@shared_task
 	async def generate_image(self, content: str) -> str:
 		image_bytes: bytes | Any = await self.get_stability_ai_image_bytes(content)
 		return image_bytes
 
+	@shared_task
 	async def save_image(self, user_id: int, title: str, image_bytes: str):
 		file_path = f'images/{user_id}/{title}.png'
-		image_url = await self.storage.upload_image_from_storage(image_bytes, file_path)
+		image_url = await self.storage.upload_file_from_storage(image_bytes, file_path)
 		return image_url
 	
 	async def delete_image(self, file_path: str) -> bool:
-		return await self.storage.delete_image_from_storage(file_path)
+		return await self.storage.delete_file_from_storage(file_path)
 
 	async def get_stability_ai_image_bytes(self, content: str) -> bytes | Any:
 		response = await requests.post(

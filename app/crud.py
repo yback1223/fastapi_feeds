@@ -39,7 +39,7 @@ async def get_feeds_by_user(db: Session, user_id: int):
 		return feeds
 	except SQLAlchemyError as e:
 		logger.error(f"Database error during feed retrieval for user_id {user_id}: {e}")
-		raise Exception("Feed retrieval failed due to a database error.")
+		raise Exception("Feed retrieval failed due to a database error.", e)
 	except Exception as e:
 		logger.critical(f"Unexpected error during feed retrieval for user_id {user_id}: {e}")
 		raise
